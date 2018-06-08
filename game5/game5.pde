@@ -13,6 +13,7 @@ int c6=int(f);
 float g=random(1,5);
 int c7=int(g);
 int count=0;
+int GOC=0;
 
 
 void setup(){
@@ -29,6 +30,8 @@ void draw(){
   //textSize(15); text("Press SpaceKey To Start Game",width/2,20);
   textSize(60); text(">",50,height/2-5);
   Discom1();Discom2();Discom3();Discom4();Discom5();Discom6();Discom7();
+  println("count="+count);
+  println("GOC="+GOC);
 }
 
 void dots(){
@@ -128,5 +131,151 @@ void Discom7(){
   }
 }
 
-void check1(){
+void keyReleased(){
+  if((count==0)&&(key=='j')&&(c1==1)){
+    count++;
+  }else if((count==0)&&((key=='k')||(key=='i')||(key=='l'))&&(c1==1)){
+    GOC++;
+  }
+  if((count==0)&&(key=='k')&&(c1==2)){
+    count++;
+  }else if((count==0)&&((key=='j')||(key=='i')||(key=='l'))&&(c1==2)){
+    GOC++;
+  }
+  if((count==0)&&(key=='i')&&(c1==3)){
+    count++;
+  }else if((count==0)&&((key=='k')||(key=='j')||(key=='l'))&&(c1==3)){
+    GOC++;
+  }
+  if((count==0)&&(key=='l')&&(c1==4)){
+    count++;
+  }else if((count==0)&&((key=='k')||(key=='i')||(key=='j'))&&(c1==4)){
+    GOC++;
+  }
+  
+  if((count==1)&&(key=='j')&&(c2==1)){
+    count++;
+  }else if((count==1)&&((key=='k')||(key=='i')||(key=='l'))&&(c2==1)){
+    GOC++;
+  }
+  if((count==1)&&(key=='k')&&(c2==2)){
+    count++;
+  }else if((count==1)&&((key=='j')||(key=='i')||(key=='l'))&&(c2==2)){
+    GOC++;
+  }
+  if((count==1)&&(key=='i')&&(c2==3)){
+    count++;
+  }else if((count==1)&&((key=='k')||(key=='j')||(key=='l'))&&(c2==3)){
+    GOC++;
+  }
+  if((count==1)&&(key=='l')&&(c2==4)){
+    count++;
+  }else if((count==1)&&((key=='k')||(key=='i')||(key=='j'))&&(c2==4)){
+    GOC++;
+  }
+  
+  if((count==2)&&(key=='j')&&(c3==1)){
+    count++;
+  }else if((count==2)&&((key=='k')||(key=='i')||(key=='l'))&&(c3==1)){
+    GOC++;
+  }
+  if((count==2)&&(key=='k')&&(c3==2)){
+    count++;
+  }else if((count==2)&&((key=='j')||(key=='i')||(key=='l'))&&(c3==2)){
+    GOC++;
+  }
+  if((count==2)&&(key=='i')&&(c3==3)){
+    count++;
+  }else if((count==2)&&((key=='k')||(key=='j')||(key=='l'))&&(c3==3)){
+    GOC++;
+  }
+  if((count==2)&&(key=='l')&&(c3==4)){
+    count++;
+  }else if((count==2)&&((key=='k')||(key=='i')||(key=='j'))&&(c3==4)){
+    GOC++;
+  }
+  
+  if((count==3)&&(key=='j')&&(c4==1)){
+    count++;
+  }else if((count==3)&&((key=='k')||(key=='i')||(key=='l'))&&(c4==1)){
+    GOC++;
+  }
+  if((count==3)&&(key=='k')&&(c4==2)){
+    count++;
+  }else if((count==3)&&((key=='j')||(key=='i')||(key=='l'))&&(c4==2)){
+    GOC++;
+  }
+  if((count==3)&&(key=='i')&&(c4==3)){
+    count++;
+  }else if((count==3)&&((key=='k')||(key=='j')||(key=='l'))&&(c4==3)){
+    GOC++;
+  }
+  if((count==3)&&(key=='l')&&(c4==4)){
+    count++;
+  }else if((count==3)&&((key=='k')||(key=='i')||(key=='j'))&&(c4==4)){
+    GOC++;
+  }
+  
+  if((count==4)&&(key=='j')&&(c5==1)){
+    count++;
+  }else if((count==4)&&((key=='k')||(key=='i')||(key=='l'))&&(c5==1)){
+    GOC++;
+  }
+  if((count==4)&&(key=='k')&&(c5==2)){
+    count++;
+  }else if((count==4)&&((key=='j')||(key=='i')||(key=='l'))&&(c5==2)){
+    GOC++;
+  }
+  if((count==4)&&(key=='i')&&(c5==3)){
+    count++;
+  }else if((count==4)&&((key=='k')||(key=='j')||(key=='l'))&&(c5==3)){
+    GOC++;
+  }
+  if((count==4)&&(key=='l')&&(c5==4)){
+    count++;
+  }else if((count==4)&&((key=='k')||(key=='i')||(key=='j'))&&(c5==4)){
+    GOC++;
+  }
+  
+  if((count==5)&&(key=='j')&&(c6==1)){
+    count++;
+  }else if((count==5)&&((key=='k')||(key=='i')||(key=='l'))&&(c6==1)){
+    GOC++;
+  }
+  if((count==5)&&(key=='k')&&(c6==2)){
+    count++;
+  }else if((count==5)&&((key=='j')||(key=='i')||(key=='l'))&&(c6==2)){
+    GOC++;
+  }
+  if((count==5)&&(key=='i')&&(c6==3)){
+    count++;
+  }else if((count==5)&&((key=='k')||(key=='j')||(key=='l'))&&(c6==3)){
+    GOC++;
+  }
+  if((count==5)&&(key=='l')&&(c6==4)){
+    count++;
+  }else if((count==5)&&((key=='k')||(key=='i')||(key=='j'))&&(c6==4)){
+    GOC++;
+  }
+  
+  if((count==6)&&(key=='j')&&(c7==1)){
+    count++;
+  }else if((count==6)&&((key=='k')||(key=='i')||(key=='l'))&&(c7==1)){
+    GOC++;
+  }
+  if((count==6)&&(key=='k')&&(c7==2)){
+    count++;
+  }else if((count==6)&&((key=='j')||(key=='i')||(key=='l'))&&(c7==2)){
+    GOC++;
+  }
+  if((count==6)&&(key=='i')&&(c7==3)){
+    count++;
+  }else if((count==6)&&((key=='k')||(key=='j')||(key=='l'))&&(c7==3)){
+    GOC++;
+  }
+  if((count==6)&&(key=='l')&&(c7==4)){
+    count++;
+  }else if((count==6)&&((key=='k')||(key=='i')||(key=='j'))&&(c7==4)){
+    GOC++;
+  }
 }
